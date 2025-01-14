@@ -660,4 +660,171 @@ footer {
     .tips-content ul li {
         padding: 0.6rem;
     }
+}
+
+/* 農場建築頁面樣式 */
+.building-section {
+    margin: 2rem 0;
+    padding: 2rem;
+    background: var(--card-bg);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.building-section h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.building-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.building-card {
+    background: white;
+    padding: 1.8rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.building-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary-color);
+}
+
+.building-card h3 {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.building-card h3 i {
+    color: var(--primary-color);
+}
+
+.upgrade-path {
+    background: rgba(74, 144, 226, 0.1);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.2rem;
+}
+
+.upgrade-path p {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.building-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.building-card ul li {
+    margin: 0.8rem 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8rem;
+    line-height: 1.5;
+}
+
+.building-card ul li i {
+    color: var(--primary-color);
+    margin-top: 0.2rem;
+}
+
+.building-card ul ul {
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+}
+
+.building-card ul ul li {
+    margin: 0.4rem 0;
+    color: #666;
+}
+
+/* 建築建議部分樣式 */
+.tips-section {
+    margin: 2rem 0;
+    padding: 2rem;
+    background: linear-gradient(135deg, var(--card-bg) 0%, white 100%);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tips-section h2 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.tips-section h2 i {
+    color: #f1c40f;
+}
+
+.tips-content ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+.tips-content ul li {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.tips-content ul li:hover {
+    transform: translateX(5px);
+}
+
+.tips-content ul li i {
+    color: #2ecc71;
+    margin-top: 0.2rem;
+}
+
+/* 響應式設計調整 */
+@media (max-width: 768px) {
+    .building-section,
+    .tips-section {
+        padding: 1.5rem;
+    }
+
+    .building-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .building-card {
+        padding: 1.5rem;
+    }
+
+    .tips-content ul {
+        grid-template-columns: 1fr;
+    }
 } 
