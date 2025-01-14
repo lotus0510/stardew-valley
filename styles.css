@@ -507,4 +507,157 @@ footer {
     .recommended ul {
         margin-left: 1rem;
     }
+}
+
+/* 節日活動頁面樣式 */
+.season-section {
+    margin: 2rem 0;
+    padding: 2rem;
+    border-radius: 15px;
+    background: var(--card-bg);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.season-section h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.season-section h2 i {
+    margin-right: 0.5rem;
+}
+
+.festival-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.festival-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.festival-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.festival-card h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--hover-color);
+}
+
+.festival-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.festival-card ul li {
+    margin: 0.8rem 0;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.festival-card ul li i {
+    color: var(--primary-color);
+    width: 20px;
+}
+
+/* 季節特色顏色 */
+.season-section:nth-child(2) h2 i { /* 春季 */
+    color: #88c9a1;
+}
+
+.season-section:nth-child(3) h2 i { /* 夏季 */
+    color: #e6b422;
+}
+
+.season-section:nth-child(4) h2 i { /* 秋季 */
+    color: #d35400;
+}
+
+.season-section:nth-child(5) h2 i { /* 冬季 */
+    color: #3498db;
+}
+
+/* 活動建議部分樣式 */
+.tips-section {
+    margin: 2rem 0;
+    padding: 2rem;
+    background: linear-gradient(135deg, var(--card-bg) 0%, white 100%);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tips-section h2 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.tips-section h2 i {
+    color: #f1c40f;
+    margin-right: 0.5rem;
+}
+
+.tips-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.tips-content ul li {
+    margin: 1rem 0;
+    padding: 0.8rem;
+    background: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.tips-content ul li:hover {
+    transform: translateX(5px);
+}
+
+.tips-content ul li i {
+    color: #2ecc71;
+    font-size: 1.1rem;
+}
+
+/* 響應式設計調整 */
+@media (max-width: 768px) {
+    .season-section {
+        padding: 1.5rem;
+    }
+
+    .festival-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .festival-card {
+        padding: 1.2rem;
+    }
+
+    .tips-section {
+        padding: 1.5rem;
+    }
+
+    .tips-content ul li {
+        padding: 0.6rem;
+    }
 } 
