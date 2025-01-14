@@ -13,6 +13,9 @@
         <div class="nav-logo">
             <h1>Stardew Valley</h1>
         </div>
+        <button class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
         <ul class="nav-links">
             <li><a href="../index.html"><i class="fas fa-home"></i> 返回首頁</a></li>
             <li><a href="artisan.html"><i class="fas fa-wine-bottle"></i> 工匠物品</a></li>
@@ -186,5 +189,12 @@
             <p>© 2024 Stardew Valley 攻略網 | 本站內容僅供參考</p>
         </div>
     </footer>
+
+    <script>
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+    }
+    </script>
 </body>
 </html> 
