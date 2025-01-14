@@ -5,83 +5,190 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>作物種植指南 - Stardew Valley 攻略</title>
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- 導航欄 -->
     <nav class="navbar">
         <div class="nav-logo">
             <h1>Stardew Valley</h1>
         </div>
+        <button class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
         <ul class="nav-links">
-            <li><a href="../index.html">返回首頁</a></li>
-            <li><a href="artisan.html">工匠物品</a></li>
-            <li><a href="festival.html">節日活動</a></li>
-            <li><a href="barn.html">農舍建築</a></li>
+            <li><a href="../index.html"><i class="fas fa-home"></i> 返回首頁</a></li>
+            <li><a href="artisan.html"><i class="fas fa-wine-bottle"></i> 工匠物品</a></li>
+            <li><a href="festival.html"><i class="fas fa-calendar"></i> 節日活動</a></li>
+            <li><a href="barn.html"><i class="fas fa-warehouse"></i> 農場建築</a></li>
         </ul>
     </nav>
 
     <main class="guide-content">
-        <h1>作物種植指南</h1>
-        
-        <section class="guide-section">
-            <h2>基礎種植技巧</h2>
-            <ul>
-                <li>使用鋤頭整地</li>
-                <li>澆水保持濕潤</li>
-                <li>注意季節限制</li>
-                <li>使用肥料提高品質</li>
-            </ul>
-        </section>
+        <h1><i class="fas fa-seedling"></i> 作物種植指南</h1>
 
-        <section class="guide-section">
-            <h2>春季作物</h2>
-            <div class="crop-list">
-                <div class="crop-item">
-                    <h3>蘿蔔</h3>
-                    <p>生長期：6天</p>
-                    <p>售價：90金</p>
-                    <p>特點：生長快速，適合新手</p>
+        <section class="season-section">
+            <h2><i class="fas fa-sun"></i> 春季作物</h2>
+            <div class="crop-categories">
+                <div class="crop-category">
+                    <h3><i class="fas fa-flower"></i> 花卉</h3>
+                    <ul>
+                        <li>藍爵</li>
+                    </ul>
                 </div>
-                <div class="crop-item">
-                    <h3>草莓</h3>
-                    <p>生長期：8天</p>
-                    <p>售價：120金</p>
-                    <p>特點：可重複收穫，高收益</p>
+                <div class="crop-category">
+                    <h3><i class="fas fa-carrot"></i> 蔬菜</h3>
+                    <ul>
+                        <li>胡蘿蔔</li>
+                        <li>花椰菜</li>
+                        <li>蒜</li>
+                        <li>青豆</li>
+                        <li>甘藍菜</li>
+                        <li>防風草</li>
+                        <li>土豆</li>
+                        <li>大黃</li>
+                    </ul>
+                </div>
+                <div class="crop-category">
+                    <h3><i class="fas fa-apple-alt"></i> 水果</h3>
+                    <ul>
+                        <li>草莓</li>
+                        <li>鬱金香</li>
+                        <li>未碾米</li>
+                    </ul>
+                </div>
+                <div class="crop-category">
+                    <h3><i class="fas fa-star"></i> 特殊</h3>
+                    <ul>
+                        <li>咖啡豆</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <section class="guide-section">
-            <h2>夏季作物</h2>
-            <div class="crop-list">
-                <div class="crop-item">
-                    <h3>藍莓</h3>
-                    <p>生長期：13天</p>
-                    <p>售價：150金</p>
-                    <p>特點：可重複收穫，適合加工</p>
+        <section class="season-section">
+            <h2><i class="fas fa-umbrella-beach"></i> 夏季作物</h2>
+            <div class="crop-categories">
+                <div class="crop-category">
+                    <h3><i class="fas fa-apple-alt"></i> 水果</h3>
+                    <ul>
+                        <li>藍莓</li>
+                        <li>甜瓜</li>
+                        <li>楊桃</li>
+                    </ul>
                 </div>
-                <div class="crop-item">
-                    <h3>玉米</h3>
-                    <p>生長期：14天</p>
-                    <p>售價：100金</p>
-                    <p>特點：跨季節作物，夏秋可種</p>
+                <div class="crop-category">
+                    <h3><i class="fas fa-carrot"></i> 蔬菜</h3>
+                    <ul>
+                        <li>玉米</li>
+                        <li>辣椒</li>
+                        <li>蘿蔔</li>
+                        <li>紅葉捲心菜</li>
+                        <li>金皮西葫蘆</li>
+                        <li>西紅柿</li>
+                        <li>小麥</li>
+                    </ul>
+                </div>
+                <div class="crop-category">
+                    <h3><i class="fas fa-flower"></i> 花卉</h3>
+                    <ul>
+                        <li>虞美人花</li>
+                        <li>夏季亮片</li>
+                        <li>向日葵</li>
+                    </ul>
+                </div>
+                <div class="crop-category">
+                    <h3><i class="fas fa-star"></i> 特殊</h3>
+                    <ul>
+                        <li>啤酒花</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <section class="guide-section">
-            <h2>進階種植技巧</h2>
-            <div class="tips">
-                <h3>灑水器系統</h3>
-                <p>自動化澆水，節省時間精力</p>
-                <h3>溫室種植</h3>
-                <p>全年種植任意季節作物</p>
+        <section class="season-section">
+            <h2><i class="fas fa-leaf"></i> 秋季作物</h2>
+            <div class="crop-categories">
+                <div class="crop-category">
+                    <h3><i class="fas fa-carrot"></i> 蔬菜</h3>
+                    <ul>
+                        <li>莧菜</li>
+                        <li>洋薊</li>
+                        <li>甜菜</li>
+                        <li>小白菜</li>
+                        <li>西蘭花</li>
+                        <li>茄子</li>
+                        <li>南瓜</li>
+                        <li>山藥</li>
+                    </ul>
+                </div>
+                <div class="crop-category">
+                    <h3><i class="fas fa-apple-alt"></i> 水果</h3>
+                    <ul>
+                        <li>蔓越莓</li>
+                        <li>葡萄</li>
+                        <li>霜瓜</li>
+                    </ul>
+                </div>
+                <div class="crop-category">
+                    <h3><i class="fas fa-flower"></i> 花卉</h3>
+                    <ul>
+                        <li>玫瑰仙子</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="season-section">
+            <h2><i class="fas fa-snowflake"></i> 冬季作物</h2>
+            <div class="crop-categories">
+                <div class="crop-category">
+                    <h3><i class="fas fa-apple-alt"></i> 水果</h3>
+                    <ul>
+                        <li>霜瓜</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="tips-section">
+            <h2><i class="fas fa-lightbulb"></i> 種植建議</h2>
+            <div class="tips-content">
+                <ul>
+                    <li><i class="fas fa-check"></i> 根據季節選擇合適的作物</li>
+                    <li><i class="fas fa-check"></i> 注意作物的生長時間和收穫週期</li>
+                    <li><i class="fas fa-check"></i> 合理規劃灌溉系統</li>
+                    <li><i class="fas fa-check"></i> 使用肥料提高作物品質</li>
+                    <li><i class="fas fa-check"></i> 考慮作物的售價和收益</li>
+                </ul>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>© 2024 Stardew Valley 攻略網 | 本站內容僅供參考</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>關於本站</h3>
+                <p>本站提供星露谷物語遊戲攻略與建議，幫助玩家更好地享受遊戲樂趣。</p>
+            </div>
+            <div class="footer-section">
+                <h3>快速連結</h3>
+                <ul>
+                    <li><a href="artisan.html">工匠物品</a></li>
+                    <li><a href="festival.html">節日活動</a></li>
+                    <li><a href="barn.html">農場建築</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Stardew Valley 攻略網 | 本站內容僅供參考</p>
+        </div>
     </footer>
+
+    <script>
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+    }
+    </script>
 </body>
 </html> 

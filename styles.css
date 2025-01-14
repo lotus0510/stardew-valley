@@ -776,7 +776,7 @@ footer {
     width: 20px;
 }
 
-/* 季節特色顏色 */
+/* 季節圖標顏色 */
 .season-section:nth-child(2) h2 i { /* 春季 */
     color: #88c9a1;
 }
@@ -1098,5 +1098,89 @@ footer {
 
     .guide-content {
         margin-top: 1rem;
+    }
+}
+
+/* 作物種植頁面樣式 */
+.crop-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.crop-category {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.crop-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.crop-category h3 {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.crop-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.crop-category ul li {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    background: var(--bg-color);
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+}
+
+.crop-category ul li:hover {
+    transform: translateX(5px);
+    background: rgba(74, 144, 226, 0.1);
+}
+
+/* 季節圖標顏色 */
+.season-section:nth-child(2) h2 i { /* 春季 */
+    color: #88c9a1;
+}
+
+.season-section:nth-child(3) h2 i { /* 夏季 */
+    color: #e6b422;
+}
+
+.season-section:nth-child(4) h2 i { /* 秋季 */
+    color: #d35400;
+}
+
+.season-section:nth-child(5) h2 i { /* 冬季 */
+    color: #3498db;
+}
+
+/* 響應式設計補充 */
+@media (max-width: 768px) {
+    .crop-categories {
+        grid-template-columns: 1fr;
+    }
+
+    .crop-category {
+        padding: 1.2rem;
+    }
+
+    .crop-category h3 {
+        font-size: 1.2rem;
+    }
+
+    .crop-category ul li {
+        padding: 0.4rem;
     }
 } 
